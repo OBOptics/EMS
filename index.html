@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>EMS Mock Postsecondary Outcomes | OB Optics</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<style>
+		/* Small polish for link cards + buttons */
+		.card-grid .box { height: 100%; }
+		.button.small { padding: 0.65em 1.25em; font-size: 0.9em; }
+		.resource-list li { margin-bottom: 0.75rem; }
+		.resource-list a { text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,0.35); }
+		.resource-list a:hover { border-bottom-color: rgba(255,255,255,0.85); }
+
+		/* --- Fix unclickable buttons (z-index / overlay issue) --- */
+		.actions, .actions li, .actions a {
+			position: relative;
+			z-index: 50;
+			pointer-events: auto;
+		}
+
+		/* Avoid an overlay layer blocking clicks */
+		#header, #one, #two, #predictive, #mindset-survey, #three, #footer { position: relative; z-index: 1; }
+
+		/* --- Survey styling fix (Photon style2 makes text white; force black inside survey card) --- */
+		#mindset-survey .survey-card {
+			background: #fff;
+			color: #111 !important;
+			border-radius: 14px;
+			padding: 22px;
+			box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+		}
+		#mindset-survey .survey-card,
+		#mindset-survey .survey-card * { color: #111 !important; }
+
+		#mindset-survey .survey-card label {
+			display: block;
+			margin: 0.85rem 0 0.35rem;
+			font-weight: 700;
+			color: #111 !important;
+		}
+
+		#mindset-survey .survey-card input,
+		#mindset-survey .survey-card select,
+		#mindset-survey .survey-card textarea {
+			background: #fff !important;
+			color: #111 !important;
+			border: 1px solid rgba(0,0,0,0.18) !important;
+		}
+
+		#mindset-survey .survey-card ::placeholder { color: rgba(0,0,0,0.55) !important; }
+
+		#mindset-survey #surveyOutput {
+			width: 100%;
+			border-radius: 10px;
+			padding: 12px;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<section id="header">
+		<div class="inner">
+			<span class="icon solid major fa-graduation-cap"></span>
+			<h1>
+				EMS Postsecondary Outcomes<br />
+				<strong>Interactive Dashboard + Resources</strong>
+			</h1>
+			<p>
+				A compact example project hub: explore sample (non-real) district-level outcomes, view a mindset-focused presentation, and access counselor-ready tools—all in one place.
+			</p>
+			<ul class="actions special">
+				<li>
+					<a href="https://u1j2dj-obichi-oleru.shinyapps.io/emdashboard/" target="_blank" rel="noopener" class="button primary scrolly">
+						Open the Dashboard
+					</a>
+				</li>
+				<li><a href="#one" class="button scrolly">Project Overview</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- One: Overview -->
+	<section id="one" class="main style1">
+		<div class="container">
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+					<header class="major">
+						<h2>Economic mobility requires confronting mindset shaped by poverty</h2>
+					</header>
+
+					<p>
+						Poverty is not only a financial condition—it is also a psychological environment. When students grow up in
+						instability, scarcity, and systems that rarely reward effort in predictable ways, they often internalize a
+						<strong>mindset of constraint</strong>: lowered expectations, fear of risk, hesitation to ask for help, and a belief
+						that outcomes are fixed no matter what they do.
+					</p>
+
+					<p>
+						When we try to increase postsecondary enrollment without measuring and addressing that suppressed mindset,
+						we place the burden on students to “push through” barriers that were never designed to feel navigable or welcoming.
+						The result is familiar: modest gains followed by a plateau.
+					</p>
+
+					<p>
+						This site aknowledges mindset as a <strong>leading indicator</strong> of economic mobility. The dashboard shows where outcomes stand today.
+						The projections reveal how growth flattens without deeper intervention. The survey demonstrates how programs can systematically surface
+						confidence, belonging, persistence, planning, and help-seeking—so support can be deployed <em>before</em> disengagement occurs.
+					</p>
+
+					<ul class="actions">
+						<li>
+							<a href="#mindset-survey" class="button primary scrolly">
+								Measure Student Mindset
+							</a>
+						</li>
+						<li>
+							<a href="https://u1j2dj-obichi-oleru.shinyapps.io/emdashboard/" target="_blank" rel="noopener" class="button">
+								View Mock Outcome Trends
+							</a>
+						</li>
+						<li>
+							<a href="https://docs.google.com/presentation/d/14GbPiPaiDsuhe1mwdp-EdJJainZsEWt8TRYhiklXPBI/edit?usp=sharing"
+							   target="_blank" rel="noopener" class="button">
+								Mindset Strategy Deck
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-12-medium imp-medium">
+					<span class="image fit"><img src="images/impoverished mindset.png" alt="Mindset shaped by poverty" /></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Two: Highlights -->
+	<section id="two" class="main style2">
+		<div class="container">
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+					<ul class="major-icons">
+						<li><span class="icon solid style1 major fa-chart-line"></span></li>
+						<li><span class="icon solid style2 major fa-slideshare"></span></li>
+						<li><span class="icon solid style3 major fa-book-open"></span></li>
+						<li><span class="icon solid style4 major fa-lightbulb"></span></li>
+						<li><span class="icon solid style5 major fa-school"></span></li>
+						<li><span class="icon solid style6 major fa-users"></span></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-12-medium">
+					<header class="major">
+						<h2>Featured links</h2>
+					</header>
+					<p>Use these to review the work quickly. </p>
+
+					<div class="row gtr-150 card-grid">
+						<div class="col-12">
+							<section class="box">
+								<h3>EMS Dashboard (Interactive)</h3>
+								<p>
+									Explore mock postsecondary outcomes and related indicators by district.
+									Designed for quick filtering and stakeholder-friendly visuals.
+								</p>
+								<ul class="actions">
+									<li>
+										<a href="https://u1j2dj-obichi-oleru.shinyapps.io/emdashboard/" target="_blank" rel="noopener"
+										   class="button primary small">Open Dashboard</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-12">
+							<section class="box">
+								<h3>PowerPoint: Importance of Student Mindsets</h3>
+								<p>
+									A concise deck connecting student mindset concepts to engagement, persistence,
+									and practical classroom/program strategies.
+								</p>
+								<ul class="actions">
+									<li>
+										<a href="https://docs.google.com/presentation/d/14GbPiPaiDsuhe1mwdp-EdJJainZsEWt8TRYhiklXPBI/edit?usp=sharing"
+										   target="_blank" rel="noopener" class="button primary small">View Presentation</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+
+						<div class="col-12">
+							<section class="box">
+								<h3>EMS Blog</h3>
+								<p>
+									Project narrative: the “why,” the approach, what the numbers suggest,
+									and how this can inform decisions.
+								</p>
+								<ul class="actions">
+									<li>
+										<a href="https://oboptics.github.io/Portfolio/Blog_EMS.html" target="_blank" rel="noopener"
+										   class="button primary small">Read the Blog</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Predictive Analysis -->
+	<section id="predictive" class="main style1">
+		<div class="container">
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+					<header class="major">
+						<h2>Predictive Analysis: Growth Won’t Be Enough Without Mindset</h2>
+					</header>
+
+					<p>
+						Using the cleaned EMS mock dataset, I projected postsecondary enrollment for economically disadvantaged students over
+						the next five years. The baseline trajectory is essentially flat at <strong>~63%</strong>.
+					</p>
+
+					<p>
+						Even in an improvement scenario, enrollment rises to about <strong>65.35%</strong> in Year 1,
+						<strong>66.39%</strong> in Year 2, and then levels off around <strong>67.12%</strong> in Years 3–5.
+						That’s meaningful progress—but it’s also a signal that the system is hitting a ceiling.
+					</p>
+
+					<p>
+						The ceiling matters. If we want enrollment momentum that doesn’t plateau, we need to pair readiness and advising
+						with <strong>mindset supports</strong>: belonging, self-efficacy, help-seeking, and persistence when the first setback hits.
+						Without that “inner bridge,” growth slows—even when opportunity exists.
+					</p>
+
+					<ul class="actions">
+						<li>
+							<a href="https://u1j2dj-obichi-oleru.shinyapps.io/emdashboard/" class="button primary" target="_blank" rel="noopener">
+								Open EMS Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="https://docs.google.com/presentation/d/14GbPiPaiDsuhe1mwdp-EdJJainZsEWt8TRYhiklXPBI/edit?usp=sharing"
+							   class="button" target="_blank" rel="noopener">
+								Mindsets Slides
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-12-medium imp-medium">
+					<span class="image fit">
+						<img src="images/mindset.png" alt="Mindset and persistence" />
+					</span>
+				</div>
+			</div>
+
+			<hr />
+
+			<header class="major">
+				<h2>Mock 5-Year Enrollment Projection (ECODIS)</h2>
+			</header>
+
+			<div style="background:#fff; border-radius:12px; padding:18px;">
+				<svg viewBox="0 0 900 360" role="img" aria-label="Projected enrollment over five years">
+					<rect x="70" y="30" width="800" height="270" fill="none" stroke="rgba(0,0,0,0.18)" />
+
+					<g stroke="rgba(0,0,0,0.08)">
+						<line x1="70" y1="300" x2="870" y2="300"/>
+						<line x1="70" y1="255" x2="870" y2="255"/>
+						<line x1="70" y1="210" x2="870" y2="210"/>
+						<line x1="70" y1="165" x2="870" y2="165"/>
+						<line x1="70" y1="120" x2="870" y2="120"/>
+						<line x1="70" y1="75"  x2="870" y2="75"/>
+						<line x1="70" y1="30"  x2="870" y2="30"/>
+					</g>
+
+					<g font-size="12">
+						<text x="35" y="305">62%</text>
+						<text x="35" y="255">63%</text>
+						<text x="35" y="205">64%</text>
+						<text x="35" y="155">65%</text>
+						<text x="35" y="105">66%</text>
+						<text x="35" y="55">67%</text>
+						<text x="35" y="35">68%</text>
+
+						<text x="70"  y="335">Y1</text>
+						<text x="270" y="335">Y2</text>
+						<text x="470" y="335">Y3</text>
+						<text x="670" y="335">Y4</text>
+						<text x="870" y="335" text-anchor="end">Y5</text>
+					</g>
+
+					<!-- Baseline -->
+					<polyline fill="none" stroke="#111" stroke-width="3"
+						points="70,255 270,255 470,255 670,255 870,255" />
+
+					<!-- Improvement -->
+					<polyline fill="none" stroke="#2b6cb0" stroke-width="3"
+						points="70,149 270,102 470,70 670,70 870,70" />
+
+					<g>
+						<circle cx="70" cy="255" r="5" fill="#111"/><circle cx="270" cy="255" r="5" fill="#111"/>
+						<circle cx="470" cy="255" r="5" fill="#111"/><circle cx="670" cy="255" r="5" fill="#111"/>
+						<circle cx="870" cy="255" r="5" fill="#111"/>
+
+						<circle cx="70" cy="149" r="5" fill="#2b6cb0"/><circle cx="270" cy="102" r="5" fill="#2b6cb0"/>
+						<circle cx="470" cy="70" r="5" fill="#2b6cb0"/><circle cx="670" cy="70" r="5" fill="#2b6cb0"/>
+						<circle cx="870" cy="70" r="5" fill="#2b6cb0"/>
+					</g>
+
+					<g font-size="12">
+						<rect x="70" y="310" width="12" height="12" fill="#111"></rect>
+						<text x="90" y="320">Baseline (~63%)</text>
+
+						<rect x="260" y="310" width="12" height="12" fill="#2b6cb0"></rect>
+						<text x="280" y="320">Improvement (~65.35% → ~67.12%)</text>
+					</g>
+				</svg>
+			</div>
+
+			<div style="margin-top: 1.25rem;">
+				<p>
+					<strong>Bottom line:</strong> the model shows progress, but the slope flattens. To move beyond the plateau,
+					we need measurable mindset supports (belonging, self-efficacy, help-seeking) embedded into advising and readiness—
+					not treated as an optional add-on.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Student Mindset Survey -->
+	<section id="mindset-survey" class="main style2">
+		<div class="container">
+			<header class="major">
+				<h2>Student Mindset Survey (Counselor-Ready)</h2>
+			</header>
+
+			<p>
+				Use this quick survey as a consistent “mindset check-in” before advising sessions.
+				It helps counselors identify confidence gaps, belonging concerns, and barriers that can derail postsecondary follow-through.
+				(Estimated time: 3–5 minutes)
+			</p>
+
+			<div class="row gtr-150">
+				<div class="col-6 col-12-medium">
+					<h3>Instructions</h3>
+					<ul>
+						<li>Have students complete this before a counseling appointment or advising event.</li>
+						<li>Review A/B choices first to target support quickly.</li>
+						<li>Follow up with a plan: one barrier removed + one next step scheduled.</li>
+					</ul>
+
+					<p style="margin-top: 1rem;">
+						<strong>Scale:</strong> A = Avoid/withdraw, B = Try alone/limited follow-through, C = Seek support, D = Plan + persist + proactive help-seeking
+					</p>
+
+					<ul class="actions">
+						<li><a href="#predictive" class="button scrolly">Back to Predictive Analysis</a></li>
+						<li>
+							<a href="https://docs.google.com/presentation/d/14GbPiPaiDsuhe1mwdp-EdJJainZsEWt8TRYhiklXPBI/edit?usp=sharing"
+							   class="button primary" target="_blank" rel="noopener">
+								Mindsets Deck
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-12-medium">
+					<section class="survey-card">
+						<h2>Survey Form</h2>
+
+						<form id="mindsetForm">
+							<div class="row gtr-uniform gtr-50">
+
+								<div class="col-12">
+									<input type="text" id="student_name" name="student_name" placeholder="Student name (optional)" />
+								</div>
+
+								<div class="col-6 col-12-xsmall">
+									<input type="text" id="student_id" name="student_id" placeholder="Student ID (optional)" />
+								</div>
+
+								<div class="col-6 col-12-xsmall">
+									<select id="grade_level" name="grade_level">
+										<option value="">Grade level (optional)</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="q1_confidence"><strong>1) You’re accepted to a program, but the financial aid steps feel confusing and time-sensitive. What do you do first?</strong></label>
+									<select id="q1_confidence" name="q1_confidence" required>
+										<option value="">Choose A–D</option>
+										<option value="A">A) I put it off because I don’t want to mess it up.</option>
+										<option value="B">B) I try alone, and if it gets hard, I stop.</option>
+										<option value="C">C) I ask a trusted adult/counselor to sit with me and we do the first step together.</option>
+										<option value="D">D) I break it into steps, set a deadline for each, and get help early if needed.</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="q2_persistence"><strong>2) You fail a quiz or get a low grade right when you’re juggling work/family responsibilities. What’s most likely?</strong></label>
+									<select id="q2_persistence" name="q2_persistence" required>
+										<option value="">Choose A–D</option>
+										<option value="A">A) I assume I’m not “college material” and mentally check out.</option>
+										<option value="B">B) I keep going, but I don’t change anything.</option>
+										<option value="C">C) I meet with the teacher/tutor and make a plan to recover.</option>
+										<option value="D">D) I change my strategy immediately (study plan + help + schedule), even if it’s uncomfortable.</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="q3_belonging"><strong>3) You visit a college/training campus and feel like you don’t fit in. What do you do?</strong></label>
+									<select id="q3_belonging" name="q3_belonging" required>
+										<option value="">Choose A–D</option>
+										<option value="A">A) I avoid going back because it confirms I don’t belong.</option>
+										<option value="B">B) I go back only if I have to, but I stay quiet and disconnected.</option>
+										<option value="C">C) I find one person/office (advisor, counselor, program staff) that feels safe and start there.</option>
+										<option value="D">D) I intentionally build connection (student support office, club, mentor) because belonging is something I can grow.</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="q4_clarity"><strong>4) Your work schedule changes and you might miss an advising event or deadline. What’s your move?</strong></label>
+									<select id="q4_clarity" name="q4_clarity" required>
+										<option value="">Choose A–D</option>
+										<option value="A">A) I give up on the deadline — it is what it is.</option>
+										<option value="B">B) I hope it works out, but I don’t contact anyone.</option>
+										<option value="C">C) I message the counselor/office to reschedule and ask what I can do remotely.</option>
+										<option value="D">D) I ask for options early (alternate dates, online forms, extensions) and make a backup plan.</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="q5_helpseeking"><strong>5) You don’t understand a form/process, and you’re worried people will judge you. What do you do?</strong></label>
+									<select id="q5_helpseeking" name="q5_helpseeking" required>
+										<option value="">Choose A–D</option>
+										<option value="A">A) I avoid asking — I don’t want to look stupid.</option>
+										<option value="B">B) I ask a friend, but I won’t ask staff.</option>
+										<option value="C">C) I ask a counselor/teacher for help, even if it’s uncomfortable.</option>
+										<option value="D">D) I treat help-seeking as a skill: I ask early, ask clearly, and follow up until it’s solved.</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="barrier">6) Biggest barrier right now (choose one):</label>
+									<select id="barrier" name="barrier" required>
+										<option value="">Select one</option>
+										<option>Money / financial aid</option>
+										<option>Transportation</option>
+										<option>Family responsibilities</option>
+										<option>Uncertainty about major/career</option>
+										<option>Grades / academic preparation</option>
+										<option>Application / paperwork</option>
+										<option>Confidence / motivation</option>
+										<option>Other</option>
+									</select>
+								</div>
+
+								<div class="col-12">
+									<label for="next_two_weeks_help">7) What would help most in the next 2 weeks?</label>
+									<textarea id="next_two_weeks_help" name="next_two_weeks_help" rows="3"
+										placeholder="Example: FAFSA help, application workshop, tutoring plan, campus visit..." required></textarea>
+								</div>
+
+								<div class="col-12">
+									<label for="one_goal">8) One goal I will complete before my next meeting:</label>
+									<input id="one_goal" type="text" name="one_goal"
+										placeholder="Example: Submit FAFSA, finish application, meet with advisor..." required />
+								</div>
+
+								<div class="col-12">
+									<ul class="actions">
+										<li><button type="submit" class="button primary">Generate Summary</button></li>
+										<li><button type="button" class="button" onclick="resetSurvey()">Reset</button></li>
+									</ul>
+								</div>
+
+							</div>
+						</form>
+
+						<hr />
+
+						<h4>Student Summary (copy/paste into notes)</h4>
+						<textarea id="surveyOutput" rows="8"
+							placeholder="Click “Generate Summary” to create a counselor-friendly summary..."></textarea>
+
+						<ul class="actions" style="margin-top: 0.75rem;">
+							<li><button type="button" class="button small" onclick="copySummary()">Copy Summary</button></li>
+						</ul>
+					</section>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Three: Additional resources -->
+	<section id="three" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>Additional resources</h2>
+			</header>
+			<p>Useful references on mindsets, college readiness, and dual credit / dual enrollment research.</p>
+
+			<div class="row gtr-150">
+				<div class="col-12">
+					<section class="box">
+						<h3>Recommended reading</h3>
+						<ul class="resource-list" style="list-style: none; padding-left: 0; margin: 0;">
+							<li>
+								<strong>Growth mindset at scale (national study)</strong><br />
+								<a href="https://www.nature.com/articles/s41586-019-1466-y" target="_blank" rel="noopener">
+									Yeager et al. (2019) – A national experiment reveals where a growth mindset improves achievement (Nature)
+								</a>
+							</li>
+							<li>
+								<strong>Dual enrollment / dual credit outcomes</strong><br />
+								<a href="https://ccrc.tc.columbia.edu/media/k2/attachments/dual-enrollment-works-who-why.pdf" target="_blank" rel="noopener">
+									Community College Research Center – Dual Enrollment Works (who it helps and why)
+								</a>
+							</li>
+							<li>
+								<strong>Texas CCMR documentation</strong><br />
+								<a href="https://tea.texas.gov/texas-schools/accountability/academic-accountability/performance-reporting/college-career-and-military-readiness-ccmr-technical-assistance-documents" target="_blank" rel="noopener">
+									Texas Education Agency – CCMR Technical Assistance Documents
+								</a>
+							</li>
+							<li>
+								<strong>Mindset evidence debate (meta-analyses overview)</strong><br />
+								<a href="https://www.kqed.org/mindshift/60490/does-growth-mindset-matter-the-debate-heats-up-with-dueling-meta-analyses" target="_blank" rel="noopener">
+									Hechinger Report / MindShift – Dueling meta-analyses on growth mindset impacts
+								</a>
+							</li>
+							<li>
+								<strong>Evidence summary: Growth mindset interventions</strong><br />
+								<a href="https://ies.ed.gov/ncee/wwc/InterventionReport/726" target="_blank" rel="noopener">
+									What Works Clearinghouse – Growth Mindset interventions evidence snapshot
+								</a>
+							</li>
+						</ul>
+
+						<ul class="actions special" style="margin-top: 2rem;">
+							<li>
+								<a href="https://u1j2dj-obichi-oleru.shinyapps.io/emdashboard/" target="_blank" rel="noopener" class="button primary">
+									Back to Dashboard
+								</a>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footer">
+		<ul class="copyright">
+			<li>&copy; By Annetta 'Obi' Oleru </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</section>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		function resetSurvey() {
+			document.getElementById("mindsetForm").reset();
+			document.getElementById("surveyOutput").value = "";
+		}
+
+		function copySummary() {
+			const out = document.getElementById("surveyOutput");
+			out.select();
+			out.setSelectionRange(0, 99999);
+			document.execCommand("copy");
+		}
+
+		// A–D mapped to “mindset strength” (1–4)
+		function scoreChoice(letter) {
+			const map = { A: 1, B: 2, C: 3, D: 4 };
+			return map[letter] || null;
+		}
+
+		function labelChoice(letter) {
+			const labels = {
+				A: "Avoid / disengage",
+				B: "Try alone / limited follow-through",
+				C: "Seek support / make a plan",
+				D: "Plan + persistence + proactive help-seeking"
+			};
+			return labels[letter] || "N/A";
+		}
+
+		document.getElementById("mindsetForm").addEventListener("submit", function (e) {
+			e.preventDefault();
+
+			const formData = new FormData(e.target);
+			const name = formData.get("student_name") || "Student";
+			const id = formData.get("student_id") || "N/A";
+			const grade = formData.get("grade_level") || "N/A";
+
+			const q1 = formData.get("q1_confidence");
+			const q2 = formData.get("q2_persistence");
+			const q3 = formData.get("q3_belonging");
+			const q4 = formData.get("q4_clarity");
+			const q5 = formData.get("q5_helpseeking");
+
+			const barrier = formData.get("barrier");
+			const help = formData.get("next_two_weeks_help");
+			const goal = formData.get("one_goal");
+
+			const scores = [
+				{ key: "Financial aid follow-through", letter: q1, val: scoreChoice(q1) },
+				{ key: "Persistence after setback", letter: q2, val: scoreChoice(q2) },
+				{ key: "Belonging / connection", letter: q3, val: scoreChoice(q3) },
+				{ key: "Clarity + next steps", letter: q4, val: scoreChoice(q4) },
+				{ key: "Help-seeking", letter: q5, val: scoreChoice(q5) }
+			];
+
+			// Flag if choice is A or B (score 1–2)
+			const flags = scores.filter(s => (s.val !== null && s.val <= 2)).map(s => s.key);
+
+			const flagText = flags.length
+				? `Needs attention (A/B choices): ${flags.join(", ")}`
+				: "Strength signal: mostly C/D choices (planning + persistence + help-seeking).";
+
+			const avg = scores.reduce((acc, s) => acc + (s.val || 0), 0) / scores.length;
+			const avgText =
+				avg < 2 ? "High risk of disengagement without support" :
+				avg < 3 ? "Moderate risk—benefits from structured support" :
+				"Good momentum—reinforce strategy + accountability";
+
+			const output =
+`Mindset Check-In Summary (Scenario-Based)
+Name: ${name}
+Student ID: ${id}
+Grade: ${grade}
+
+Scenario choices:
+1) Financial aid follow-through: ${q1} (${labelChoice(q1)})
+2) Persistence after setback: ${q2} (${labelChoice(q2)})
+3) Belonging / connection: ${q3} (${labelChoice(q3)})
+4) Clarity + next steps: ${q4} (${labelChoice(q4)})
+5) Help-seeking: ${q5} (${labelChoice(q5)})
+
+Overall indicator (avg 1–4): ${avg.toFixed(2)} — ${avgText}
+${flagText}
+
+Primary barrier: ${barrier}
+
+Most helpful support in next 2 weeks:
+${help}
+
+Student’s next goal before next meeting:
+${goal}
+`;
+
+			document.getElementById("surveyOutput").value = output;
+		});
+	</script>
+
+</body>
+</html>
+
